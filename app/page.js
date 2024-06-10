@@ -8,7 +8,6 @@ export default function Home() {
     <section className="flex flex-col items-center justify-center mt-3 mb-3 p-2">
       <div className="w-[250px] md:w-[550px] p-2">
         <Heading src="/key.svg" text="Key Collection and Drop off" />
-
         <p>
           Check in is from 3pm up until 11pm(Monday-Saturday) or until
           10pm(Sunday).
@@ -19,8 +18,15 @@ export default function Home() {
           for key drop off on departure day).
           <br />
           <br />
-          The keynest / shop name is Costcutter (2 mins walk from Battersea
-          Power Station underground)
+          The keynest / shop name is: <br />
+          <Link
+            className="bg-sky-500/50"
+            href="https://www.google.com/maps/place/Costcutter/@51.4789903,-0.1433427,17z/data=!3m2!4b1!5s0x4876050209da4345:0xe75fa658df2f96e1!4m6!3m5!1s0x487604fdf9fa441f:0x67ac225feb2f3ff6!8m2!3d51.478987!4d-0.1407678!16s%2Fg%2F1tjz2vhk?authuser=0&entry=ttu"
+            target="_blank"
+          >
+            Costcutter (2 mins walk from Battersea Power Station
+            underground)[tap/click to open Google Map]
+          </Link>
           <br />
           178-180 Thessaly Rd, SW8 4ED
           <br />
