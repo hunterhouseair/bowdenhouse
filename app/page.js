@@ -1,4 +1,3 @@
-import Nav from "@/components/Nav";
 import Heading from "@/components/Heading";
 import Video from "@/components/Video";
 import Image from "next/image";
@@ -14,9 +13,11 @@ export default function Home() {
           Check in is from 3pm up until 11pm(Monday-Saturday) or until
           10pm(Sunday).
           <br />
+          <br />
           To access the flat, the key will need to be collected at a key
           nest(this is a third party service that we use to store the key and
           for key drop off on departure day).
+          <br />
           <br />
           The keynest / shop name is Costcutter (2 mins walk from Battersea
           Power Station underground)
