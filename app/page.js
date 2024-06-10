@@ -1,113 +1,146 @@
+import Nav from "@/components/Nav";
+import Heading from "@/components/Heading";
+import Video from "@/components/Video";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <section className="flex flex-col items-center justify-center mt-3 mb-3 p-2">
+      <div className="w-[250px] md:w-[550px] p-2">
+        <Heading src="/key.svg" text="Key Collection and Drop off" />
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+        <p>
+          Check in is from 3pm up until 11pm(Monday-Saturday) or until
+          10pm(Sunday).
+          <br />
+          To access the flat, the key will need to be collected at a key
+          nest(this is a third party service that we use to store the key and
+          for key drop off on departure day).
+          <br />
+          The keynest / shop name is Costcutter (2 mins walk from Battersea
+          Power Station underground)
+          <br />
+          178-180 Thessaly Rd, SW8 4ED
+          <br />
+          Mon - Sat: 08:00 - 23:00
+          <br />
+          Sun: 08:00 - 22:00
+          <br />
+        </p>
+        <p>
+          Please give a code(we will message you the code one day before arrival
+          day) to the shopkeeper and he will give you the key.
+        </p>
+        <p>Tap / Click the map below to enlarge</p>
+        <Link href="/map1.JPG" target="_blank">
+          <Image
+            src="/map1.JPG"
+            width={1000}
+            height={1000}
+            alt="direction to key nest"
+            style={{ objectFit: "contain", height: "100%", width: "100%" }}
+          />
+        </Link>
+        <br />
+        <Video
+          src="https://youtube.com/embed/JwILYVRUllQ"
+          alt="direction to key nest"
+        />
+        <br />
+        <Link href="/map2.JPG" target="_blank">
+          <Image
+            src="/map2.JPG"
+            width={1000}
+            height={1000}
+            alt="direction from key nest to Bowden House"
+            style={{ objectFit: "contain", height: "100%", width: "100%" }}
+          />
+        </Link>
+        <br />
+      </div>
+      <div className="w-full flex flex-col items-center justify-center">
+        <iframe
+          className="w-full h-[250px] md:max-w-[850px] md:h-[550px]"
+          src="https://www.youtube.com/embed/O8t1S_5mAEQ?si=IdnFkveSWpvxfy1r"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      {/* <div className="md:h-[400px] md:w-[800px]">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src="/keynest.jpg"
+          width={1000}
+          height={1000}
+          alt="direction to key nest"
+          style={{ objectFit: "contain", height: "100%", width: "100%" }}
         />
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <Video
+        src="https://youtube.com/shorts/JwILYVRUllQ"
+        alt="direction to key nest"
+      />
+      <Video
+        src="https://youtube.com/embed/ZxTRCv3uqhI"
+        alt="Payless Food and Wine location"
+      />
+      <div className="w-[250px] md:w-[550px] p-2">
+        <p>
+          After you receive the key, please proceed to <br />
+          <Link
+            className="bg-sky-500/50"
+            href="https://www.google.com/maps/dir/Payless+Food+%26+Wine,+Kennington+Lane,+London/Sky+Gardens+Nine+Elms,+Wandsworth+Road,+London/@51.4840013,-0.1285587,16z/data=!3m2!4b1!5s0x487604f04390fa09:0xfea93c11445f2e5e!4m14!4m13!1m5!1m1!1s0x487604ecfb0088b9:0x704b9ad64103429c!2m2!1d-0.1193419!2d51.4865151!1m5!1m1!1s0x487604f042ef6797:0xde35a1cb5e43aab9!2m2!1d-0.1270895!2d51.4817039!3e2?authuser=0&entry=ttu"
+            target="_blank"
+          >
+            Flat 1008, Sky Gardens, 155 Wandsworth Road, London, SW8 2FW on the
+            10th Floor.[click to open google map]
+          </Link>
+          <br />
+          which is a 15 mins walk. On departure day, please return the key(you
+          don't need to give a code) to: 24 hours Payless Food and Wine 322
+          Kennington Ln, London SE11 5HY
+        </p>
       </div>
-    </main>
+      <div className="md:h-[500px] w-auto">
+        <Image
+          src="/skygarden.jpg"
+          width={1000}
+          height={1000}
+          alt="direction to key nest"
+          style={{ objectFit: "contain", height: "100%", width: "100%" }}
+        />
+      </div>
+      <Video
+        src="https://youtube.com/embed/hHy-XhfM-MU"
+        alt="arriving at Sky Garden"
+      />
+      <Video
+        src="https://youtube.com/embed/AahJOZgwg90"
+        alt="entering into the flat"
+      />
+      <p className="mt-6">To exit the building</p>
+      <Video
+        src="https://youtube.com/embed/8NQJVan9OOU"
+        alt="exit the building"
+      />
+
+      <div className="w-[250px] md:w-[550px] md:p-5">
+        <p className="my-3">
+          Below is the picture of the key. The{" "}
+          <span className="text-red-600 font-bold">RED</span> fob is for entry
+          into Sky Garden building. You can ignore the rest.
+        </p>
+        <Image
+          src="/keypicture.jpg"
+          width={800}
+          height={500}
+          alt="picture of key"
+          style={{ objectFit: "contain", height: "100%", width: "100%" }}
+        />
+      </div> */}
+    </section>
   );
 }
