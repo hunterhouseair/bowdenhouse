@@ -10,10 +10,14 @@ export default function Departure() {
         <Heading src="/depart.svg" text="Departure" />
         <p>
           On departure day by 10am, please : <br />
-          1. Dirty towels are placed in the bathroom next to the kitchen.
+          1. Dirty towels are placed in the bathroom.
           <br />
-          2. Return the key to: (you don't need to give a code to the
-          shopkeeper)
+          2. Keys:* Return the keys to Costcutter 178-180 Thessaly Rd, SW8 4ED
+          <br />
+          Opening hours: Mon - Sat: 08:00 - 23:00
+          <br /> Sun: 08:00 - 22:00 <br />
+          Please say to the shopkeeper you want to return the key. No need to
+          give a code, no need to pay, simply handover the keys.
           <br />
           {/* <Link
             className="bg-sky-500/50"
