@@ -56,6 +56,10 @@ export default function Allproperties() {
       <div className="w-[250px] h-[350px] md:w-[550px] pt-4 mt-4">
         <h1 style={{ marginTop: "50px" }}>Grafton Way</h1>
         <p>Flat 111, Grafton Way 30-40, London WC1E 6DY</p>
+        <b style={{ color: "red", marginBottom: "15px" }}>
+          <p>NOTE:</p>
+          <p>16 June - deep cleaning + setup (TBC)</p>
+        </b>
         <iframe
           src="https://calendar.google.com/calendar/embed?src=kemg78v2m95n861fq11cntdl3qngu2ks%40import.calendar.google.com&ctz=UTC"
           width="800"
