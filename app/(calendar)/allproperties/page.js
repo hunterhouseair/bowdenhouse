@@ -25,6 +25,7 @@ export default function Allproperties() {
         <h1 style={{ marginTop: "50px" }}>Prince's Square</h1>
         <p>20 Prince square Flat 3B. W2 4NP</p>
         <b style={{ color: "red", marginBottom: "15px" }}>
+          <p>NOTE:</p>
           <p>Arrival 12 June until departure 19 June.</p>
           <p>No arrival 19 June.</p>
           <p>Arrival 20 June until departure 22 June.</p>
@@ -41,6 +42,10 @@ export default function Allproperties() {
       <div className="w-[250px] h-[350px] md:w-[550px] pt-4 mt-4">
         <h1 style={{ marginTop: "50px" }}>Sky Garden</h1>
         <p>Flat 1008, 155 Wandsworth Road, London SW8 2FW</p>
+        <b style={{ color: "red", marginBottom: "15px" }}>
+          <p>NOTE:</p>
+          <p>24 June - no arrival</p>
+        </b>
         <iframe
           src="https://calendar.google.com/calendar/embed?src=pfnoec62930muadpkjs5d96hsnfaajbg%40import.calendar.google.com&ctz=UTC"
           width="800"
