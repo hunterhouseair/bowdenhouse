@@ -53,7 +53,7 @@ export default function Nav() {
         >
           Contact
         </Link>
-        <Link
+        {/* <Link
           className={`m-2 p-2 rounded hover:bg-sky-700 cursor-pointer ${
             pathname == "/heating"
               ? "text-white bg-indigo-800"
@@ -63,7 +63,7 @@ export default function Nav() {
           scroll={false}
         >
           Heating
-        </Link>
+        </Link> */}
         <Link
           className={`m-2 p-2 rounded hover:bg-sky-700 cursor-pointer ${
             pathname == "/sofabed"

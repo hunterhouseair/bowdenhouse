@@ -77,6 +77,33 @@ export default function Home() {
           allowfullscreen
         ></iframe>
       </div>
+      <div className="w-[250px] md:w-[550px] p-2 mt-4">
+        <Heading src="/carb.svg" text="Arriving With Car" />
+        <p>Please see the map below if you are coming by a taxi</p>
+        <Link href="/cardropoffpoint1.png" target="_blank">
+          <Image
+            src="/cardropoffpoint1.png"
+            width={1000}
+            height={1000}
+            alt="car drop off point map"
+            style={{ objectFit: "contain", height: "100%", width: "100%" }}
+          />
+        </Link>
+        <Link href="/cardropoffpoint2.png" target="_blank">
+          <Image
+            src="/cardropoffpoint2.png"
+            width={1000}
+            height={1000}
+            alt="car drop off point location"
+            style={{
+              objectFit: "contain",
+              height: "100%",
+              width: "100%",
+              marginTop: "10px",
+            }}
+          />
+        </Link>
+      </div>
     </section>
   );
 }
