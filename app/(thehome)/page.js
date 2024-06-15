@@ -69,12 +69,10 @@ export default function Home() {
       <div className="w-full flex flex-col items-center justify-center">
         <iframe
           className="w-full h-[250px] md:max-w-[850px] md:h-[550px]"
-          src="https://www.youtube.com/embed/O8t1S_5mAEQ?si=IdnFkveSWpvxfy1r"
+          src="https://www.youtube.com/embed/s27sCFMFKQQ?si=3y-h6hLdQzJJiz7e"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
+          referrerPolicy="strict-origin-when-cross-origin"
         ></iframe>
       </div>
       <div className="w-[250px] md:w-[550px] p-2 mt-4">
