@@ -4,10 +4,10 @@ export default function Allproperties() {
       <div className="w-[250px] h-[350px] md:w-[550px] p-2">
         <h1>Bowden House</h1>
         <p>Flat 43 Bowden House on the 5th Floor. 9 Palmer Road SW11 4FW</p>
-        {/* <b style={{ color: "red", marginBottom: "15px" }}>
+        <b style={{ color: "red", marginBottom: "15px" }}>
           <p>NOTE:</p>
-          <p>20 June - No Arrival</p>
-        </b> */}
+          <p>15 July - No Arrival</p>
+        </b>
         <iframe
           src="https://calendar.google.com/calendar/embed?src=dv6h28r9avoe0i2246p78sufe9e5jqcr%40import.calendar.google.com&ctz=UTC"
           width="800"
