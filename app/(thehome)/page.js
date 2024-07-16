@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center mt-3 mb-3 p-2">
-      <div className="w-[250px] md:w-[550px] p-2">
+      <div className="w-full md:w-[550px] p-3 m-3">
         <Heading src="/key.svg" text="Key Collection and Drop off" />
         <p>
           Check in is from 3pm up until 11pm(Monday-Saturday) or until
@@ -39,7 +39,7 @@ export default function Home() {
           Please give a code(we will message you the code one day before arrival
           day) to the shopkeeper and he will give you the key.
         </p>
-        <p>Tap / Click the map below to enlarge</p>
+        <p className="mt-3">Tap / Click the map below to enlarge</p>
         <Link href="/map1.JPG" target="_blank">
           <Image
             src="/map1.JPG"
@@ -75,9 +75,12 @@ export default function Home() {
           referrerPolicy="strict-origin-when-cross-origin"
         ></iframe>
       </div>
-      <div className="w-[250px] md:w-[550px] p-2 mt-4">
+      <div className="w-full md:w-[550px] p-2 mt-4">
         <Heading src="/carb.svg" text="Arriving With Car" />
-        <p>Please see the map below if you are coming by a taxi</p>
+        <p>
+          Please see the map below if you are coming by a taxi(Tap / Click the
+          map below to enlarge)
+        </p>
         <Link href="/cardropoffpoint1.png" target="_blank">
           <Image
             src="/cardropoffpoint1.png"
