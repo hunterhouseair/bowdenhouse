@@ -11,7 +11,7 @@ const Picturesaftercleaning = async () => {
       <div className="w-full">
         <h1 className="text-center m-3">Pictures After Cleaning</h1>
 
-        <Gallery images={imageFilenames} />
+        <Gallery images={imageFilenames} folderName={"aftercleaning"} />
       </div>
     </div>
   );

@@ -1,8 +1,11 @@
-import Video from "@/components/Video";
-import Image from "next/image";
-import Link from "next/link";
+import { promises as fs } from "fs";
+import path from "path";
+import Gallery from "@/components/Gallery";
 
-const Checklist = () => {
+const Checklist = async () => {
+  const imageDirectory = path.join(process.cwd(), "/public/checklist");
+  const imageFilenames = await fs.readdir(imageDirectory);
+
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="w-full md:w-[600px] p-3 m-3">
@@ -58,6 +61,7 @@ const Checklist = () => {
           <li className="pb-5">Thank you.</li>
         </ol>
       </div>
+      <Gallery images={imageFilenames} folderName={"checklist"} />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Gallery = ({ images }) => {
+const Gallery = ({ images, folderName }) => {
   return (
     <div className="flex flex-row flex-wrap items-center justify-center m-3">
       {images.map((el) => (
@@ -9,7 +9,7 @@ const Gallery = ({ images }) => {
           width={300}
           height={150}
           alt={"alt"}
-          src={`/aftercleaning/${el}`}
+          src={`/${folderName}/${el}`}
           key={el}
         />
       ))}
