@@ -1,13 +1,13 @@
 export default function Allproperties() {
   return (
-    <section className="flex flex-col items-center justify-center mt-3 mb-3 p-2">
+    <section className="flex flex-col items-center justify-center my-3 mb-3 p-2">
       <div className="w-[250px] h-[350px] md:w-[550px] p-2">
         <h1>Bowden House</h1>
         <p>Flat 43 Bowden House on the 5th Floor. 9 Palmer Road SW11 4FW</p>
-        <b style={{ color: "red", marginBottom: "15px" }}>
+        {/* <b style={{ color: "red", marginBottom: "15px" }}>
           <p>NOTE:</p>
           <p>15 July - No Arrival</p>
-        </b>
+        </b> */}
         <iframe
           src="https://calendar.google.com/calendar/embed?src=dv6h28r9avoe0i2246p78sufe9e5jqcr%40import.calendar.google.com&ctz=UTC"
           width="800"
@@ -15,8 +15,8 @@ export default function Allproperties() {
           frameborder="0"
         ></iframe>
       </div>
-      {/* <div className="w-[250px] h-[350px] md:w-[550px] p-2">
-        <h1>Hunter House</h1>
+      <div className="w-[250px] h-[350px] md:w-[550px] pt-4 mt-4">
+        <h1 style={{ marginTop: "50px" }}>Hunter House</h1>
         <p>Flat 8 Hunter House London WC1N 1BE</p>
         <iframe
           src="https://calendar.google.com/calendar/embed?src=i2qmd3b458ofocnj6gnij81ku2lturqg%40import.calendar.google.com&ctz=UTC"
@@ -24,7 +24,7 @@ export default function Allproperties() {
           height="600"
           frameborder="0"
         ></iframe>
-      </div> */}
+      </div>
       <div className="w-[250px] h-[350px] md:w-[550px] pt-4 mt-4">
         <h1 style={{ marginTop: "50px" }}>Prince's Square</h1>
         <p>20 Prince square Flat 3B. W2 4NP</p>
