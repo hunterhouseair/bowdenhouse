@@ -60,7 +60,7 @@ export default function Allproperties() {
         })}
       </div>
       <hr />
-      <div className="w-[250px] h-[350px] md:w-[550px] my-5 p-2">
+      {/* <div className="w-[250px] h-[350px] md:w-[550px] my-5 p-2">
         <h2>For Guest</h2>
         {guests.map((item, index) => {
           return (
@@ -69,7 +69,7 @@ export default function Allproperties() {
             </Link>
           );
         })}
-      </div>
+      </div> */}
     </section>
   );
 }
