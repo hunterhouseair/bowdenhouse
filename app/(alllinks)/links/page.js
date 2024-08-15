@@ -26,7 +26,11 @@ export default function Allproperties() {
 
   const staffs = [
     {
-      title: "Sky Garden",
+      title: "Sky Garden1004",
+      link: "https://skygarden1004.vercel.app/cleaner",
+    },
+    {
+      title: "Sky Garden1008",
       link: "https://skygardenflat1008.vercel.app/cleaner",
     },
     {

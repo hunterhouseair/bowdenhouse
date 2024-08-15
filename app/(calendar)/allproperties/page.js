@@ -43,6 +43,20 @@ export default function Allproperties() {
       </div>
       <div className="w-[250px] h-[350px] md:w-[550px] pt-4 mt-4">
         <h1 style={{ marginTop: "50px" }}>Sky Garden</h1>
+        <p>Flat 1004, 155 Wandsworth Road, London SW8 2FW</p>
+        {/* <b style={{ color: "red", marginBottom: "15px" }}>
+          <p>NOTE:</p>
+          <p>Arrival 1 August</p>
+          <p>Departure 14 August</p>
+        </b> */}
+        <iframe
+          src="https://calendar.google.com/calendar/embed?src=cg5uijmeq018nngvimn9k1gnnjpepk1g%40import.calendar.google.com&ctz=Europe%2FLondon"
+          width="800"
+          height="600"
+        ></iframe>
+      </div>
+      <div className="w-[250px] h-[350px] md:w-[550px] pt-4 mt-4">
+        <h1 style={{ marginTop: "50px" }}>Sky Garden</h1>
         <p>Flat 1008, 155 Wandsworth Road, London SW8 2FW</p>
         <b style={{ color: "red", marginBottom: "15px" }}>
           <p>NOTE:</p>
