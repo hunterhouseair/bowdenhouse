@@ -58,11 +58,11 @@ export default function Allproperties() {
       <div className="w-[250px] h-[350px] md:w-[550px] pt-4 mt-4">
         <h1 style={{ marginTop: "50px" }}>Sky Garden</h1>
         <p>Flat 1008, 155 Wandsworth Road, London SW8 2FW</p>
-        <b style={{ color: "red", marginBottom: "15px" }}>
+        {/* <b style={{ color: "red", marginBottom: "15px" }}>
           <p>NOTE:</p>
           <p>Arrival 1 August</p>
           <p>Departure 14 August</p>
-        </b>
+        </b> */}
         <iframe
           src="https://calendar.google.com/calendar/embed?src=pfnoec62930muadpkjs5d96hsnfaajbg%40import.calendar.google.com&ctz=UTC"
           width="800"
