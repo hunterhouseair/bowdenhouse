@@ -9,9 +9,11 @@ export default function Nav() {
   return (
     <section className="flex flex-col items-center justify-center">
       <div className="m-3 flex flex-col items-center justify-center">
-        <h1 className="m-2 p-2 font-bold">BOWDEN HOUSE</h1>
-        <h2 className="font-bold"> Flat 43 Floor 5</h2>
-        <h2 className="font-bold">9 Palmer Road, Nine Elms, SW11 4FT</h2>
+        <h1 className="m-2 p-2 font-bold text-center">Bowden House</h1>
+        <h2 className="font-bold p-2 text-center"> Flat 43 Floor 5</h2>
+        <h2 className="font-bold p-2 text-center">
+          9 Palmer Road, Nine Elms, SW11 4FT
+        </h2>
       </div>
 
       <div className="m-3 flex flex-wrap">
